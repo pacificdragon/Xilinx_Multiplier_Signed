@@ -1,0 +1,28 @@
+Command line:
+   PPRR_141088_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55070
+
+Sun Apr 30 15:34:50 2017
+
+
+ Elaboration Time: 0.265625 sec
+
+ Current Memory Usage: 365.847 Meg
+
+ Total Signals          : 509
+ Total Nets             : 223
+ Total Signal Drivers   : 161
+ Total Blocks           : 94
+ Total Primitive Blocks : 61
+ Total Processes        : 162
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 431
+
+ Total Simulation Time: 0.296875 sec
+
+ Current Memory Usage: 680.436 Meg
+
+Sun Apr 30 15:36:12 2017
+

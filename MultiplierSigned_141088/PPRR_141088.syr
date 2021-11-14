@@ -1,0 +1,345 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
+ 
+--> Reading design: PPRR_141088.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PPRR_141088.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PPRR_141088"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : PPRR_141088
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "HA.v" in library work
+Compiling verilog file "FA.v" in library work
+Module <HA> compiled
+Compiling verilog file "RCA.v" in library work
+Module <FA> compiled
+Compiling verilog file "PPRR_141088.v" in library work
+Module <RCA> compiled
+Module <PPRR_141088> compiled
+No errors in compilation
+Analysis of file <"PPRR_141088.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <PPRR_141088> in library <work>.
+
+Analyzing hierarchy for module <RCA> in library <work> with parameters.
+	N = "00000000000000000000000000001000"
+
+Analyzing hierarchy for module <HA> in library <work>.
+
+Analyzing hierarchy for module <FA> in library <work>.
+
+Analyzing hierarchy for module <HA> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <PPRR_141088>.
+Module <PPRR_141088> is correct for synthesis.
+ 
+Analyzing module <RCA> in library <work>.
+	N = 32'sb00000000000000000000000000001000
+Module <RCA> is correct for synthesis.
+ 
+Analyzing module <HA> in library <work>.
+Module <HA> is correct for synthesis.
+ 
+Analyzing module <FA> in library <work>.
+Module <FA> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <HA>.
+    Related source file is "HA.v".
+    Found 1-bit xor2 for signal <s>.
+Unit <HA> synthesized.
+
+
+Synthesizing Unit <FA>.
+    Related source file is "FA.v".
+Unit <FA> synthesized.
+
+
+Synthesizing Unit <RCA>.
+    Related source file is "RCA.v".
+WARNING:Xst:646 - Signal <carry<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <RCA> synthesized.
+
+
+Synthesizing Unit <PPRR_141088>.
+    Related source file is "PPRR_141088.v".
+Unit <PPRR_141088> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 60
+ 1-bit xor2                                            : 60
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <HA_1> is unconnected in block <U2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <rca_loop[1].FA_X> is unconnected in block <U2>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 60
+ 1-bit xor2                                            : 60
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PPRR_141088> ...
+
+Optimizing unit <RCA> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PPRR_141088, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PPRR_141088.ngr
+Top Level Output File Name         : PPRR_141088
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 24
+
+Cell Usage :
+# BELS                             : 27
+#      LUT2                        : 3
+#      LUT3                        : 5
+#      LUT4                        : 19
+# IO Buffers                       : 24
+#      IBUF                        : 16
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                       15  out of   5888     0%  
+ Number of 4 input LUTs:                 27  out of  11776     0%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    372     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 14.449ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 397 / 8
+-------------------------------------------------------------------------
+Delay:               14.449ns (Levels of Logic = 9)
+  Source:            pp1<1> (PAD)
+  Destination:       product<7> (PAD)
+
+  Data Path: pp1<1> to product<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.849   0.674  pp1_1_IBUF (pp1_1_IBUF)
+     LUT4:I0->O            4   0.648   0.619  U1/rca_loop[2].FA_X/co1 (U1/carry<2>)
+     LUT3:I2->O            3   0.648   0.534  U1/rca_loop[3].FA_X/ha2/Mxor_s_Result1 (x5<3>)
+     LUT4:I3->O            3   0.648   0.611  U3/rca_loop[3].FA_X/co1 (U3/carry<3>)
+     LUT3:I1->O            3   0.643   0.611  U3/rca_loop[4].FA_X/co1 (U3/carry<4>)
+     LUT3:I1->O            2   0.643   0.590  U3/rca_loop[5].FA_X/co1 (U3/carry<5>)
+     LUT4:I0->O            1   0.648   0.500  U4/rca_loop[7].FA_X/ha2/Mxor_s_Result1_SW0 (N01)
+     LUT2:I1->O            1   0.643   0.420  U4/rca_loop[7].FA_X/ha2/Mxor_s_Result1 (product_7_OBUF)
+     OBUF:I->O                 4.520          product_7_OBUF (product<7>)
+    ----------------------------------------
+    Total                     14.449ns (9.890ns logic, 4.559ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.09 secs
+ 
+--> 
+
+Total memory usage is 237856 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

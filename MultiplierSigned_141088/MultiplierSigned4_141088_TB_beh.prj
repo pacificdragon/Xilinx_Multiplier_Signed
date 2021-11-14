@@ -1,0 +1,8 @@
+verilog work "HA.v"
+verilog work "FA.v"
+verilog work "RCA.v"
+verilog work "PPRR_141088.v"
+verilog work "PPRG_141088.v"
+verilog work "MultiplierSigned4.v"
+verilog work "MultiplierSigned4_141088_TB.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

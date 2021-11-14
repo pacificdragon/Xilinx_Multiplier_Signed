@@ -1,0 +1,8 @@
+verilog isim_temp "HA.v"
+verilog isim_temp "FA.v"
+verilog isim_temp "RCA.v"
+verilog isim_temp "PPRR_141088.v"
+verilog isim_temp "PPRG_141088.v"
+verilog isim_temp "MultiplierSigned4.v"
+verilog isim_temp "MultiplierSigned4_141088_TB.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

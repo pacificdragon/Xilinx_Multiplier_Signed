@@ -1,0 +1,31 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4_141088_TB_isim_beh.exe -prj F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4_141088_TB_beh.prj work.MultiplierSigned4_141088_TB work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/HA.v" into library work
+Analyzing Verilog file "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/FA.v" into library work
+Analyzing Verilog file "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/RCA.v" into library work
+Analyzing Verilog file "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/PPRR_141088.v" into library work
+Analyzing Verilog file "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/PPRG_141088.v" into library work
+Analyzing Verilog file "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4.v" into library work
+Analyzing Verilog file "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4_141088_TB.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4_141088_TB.v" Line 26: Size mismatch in connection of port <y>. Formal port size is 4-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4.v" Line 28: Size mismatch in connection of port <product>. Formal port size is 8-bit while actual signal size is 4-bit.
+Completed static elaboration
+Compiling module PPRG_141088
+Compiling module HA
+Compiling module FA
+Compiling module RCA(N=8)
+Compiling module PPRR_141088
+Compiling module MultiplierSigned4
+Compiling module MultiplierSigned4_141088_TB
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 Verilog Units
+Built simulation executable F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4_141088_TB_isim_beh.exe
+Fuse Memory Usage: 26928 KB
+Fuse CPU Usage: 1499 ms

@@ -1,0 +1,28 @@
+Command line:
+   MultiplierSigned4_141088_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53746
+
+Fri May 05 07:27:20 2017
+
+
+ Elaboration Time: 0.3125 sec
+
+ Current Memory Usage: 365.851 Meg
+
+ Total Signals          : 523
+ Total Nets             : 235
+ Total Signal Drivers   : 167
+ Total Blocks           : 97
+ Total Primitive Blocks : 62
+ Total Processes        : 169
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 451
+
+ Total Simulation Time: 0.328125 sec
+
+ Current Memory Usage: 365.851 Meg
+
+Fri May 05 07:27:28 2017
+

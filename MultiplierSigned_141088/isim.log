@@ -1,0 +1,13 @@
+ISim log file
+Running: F:\STUDY MATERIAL\6th SEMESTER\VLSI Lab (10B17EC672)\141088\MultiplierSigned_141088\MultiplierSigned4_141088_TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4_141088_TB_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4.v" Line 23.  For instance UUT/UU2/, width 8 of formal port product is not equal to width 4 of actual signal y.
+WARNING: File "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4_141088_TB.v" Line 24.  For instance MultiplierSigned4_141088_TB/UUT/, width 4 of formal port y is not equal to width 8 of actual signal y1.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 50 ns :  in File "F:/STUDY MATERIAL/6th SEMESTER/VLSI Lab (10B17EC672)/141088/MultiplierSigned_141088/MultiplierSigned4_141088_TB.v" Line 33 
